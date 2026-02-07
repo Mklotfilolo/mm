@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>تجربتي الأولى مع JavaScript</title>
+  <link rel="stylesheet" href="mm.css"/>
+</head>
+<body>
+  <h1 class="titlef">مرحبًا بك في عالم JavaScript</h1>
+  <h3 id="titleH3">
+    <label for="first_input"> Enter your name </label>
+    <input type="text" name="user_name" id="first_input">
+  <button onclick="me()" class="FirstButton">اضغط هنا</button>
+  </h3>
+  <div id="hello">
+    <div>
+      <label for="texU">Full name :</label>
+      <input type="text" id="texU">
+    </div>
+    <div>
+      <label for="ageU">Age :</label>
+      <input type="number" max="80" min="5" id="ageU">
+    </div>
+    <div>
+        <label for="birthU ">Birth day :</label>
+        <input type="date"id="birthU">
+    </div>
+    <div>
+    <label for="majorU"> major :</label>
+        <select name="major" id="majorU">
+          <option value="App programer" selected> applaction program</option>
+          <option value="web devloper"> web devloper</option>
+          <option value="triner">Triner</option>
+          <option value="gamer"> Gamer</option>
+        </select>
+    </div>
+  </div>
+  <button onclick="user()" class="lastButton"><span>click me</span></button>
+  <br />
+  <div class="animat">
+  </div>
+  <script src="mm.js"></script>
+</body>
+</html>

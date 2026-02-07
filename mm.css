@@ -1,0 +1,285 @@
+   *{
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+      z-index: -3;
+      display: flex;
+      flex-direction: column;
+      row-gap: 30%;
+      align-items: center;
+      justify-content: center;
+      background-image: url('Unitiled Purple.png');
+      backdrop-filter: blur(9px);
+      background-position: center center;
+    }
+    #hello{
+      font-size:1.4rem;
+      color:rgba(80,0,60,0.6);
+    }
+    input{
+      margin:20px;
+    }
+
+   
+    @media (min-width:1px) {
+       #hello {
+      background: linear-gradient(60deg, rgba(12, 51, 111,0.6), rgba(226, 106, 240, 0.917));
+      backdrop-filter: blure(10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      border-color: aqua;
+      height: 80%;
+      width: 75%;
+      padding: 20px;
+      margin: 20px;
+      gap: 20px;
+    }
+    input {
+      background: rgba(40, 49, 64, 0.5);
+      backdrop-filter: blur(30px);
+      color: rgb(249, 72, 72);
+      font-size: medium;
+      border-radius: 20px 0px 20px 0px / 10px 0px 10px 0px;
+      border-color: steelblue;
+      width: 80%;
+      height: 30px;
+      border-style: none;
+      padding: 10px;
+      transition: all 300ms;
+    }
+
+    select {
+      background: rgba(40, 49, 64, 0.5);
+      backdrop-filter: blur(30px);
+      border-radius: 20px 0px 20px 0px / 10px 0px 10px 0px;
+      border-color: steelblue;
+      width: 80%;
+      height: 35px;
+      border-style: none;
+      padding: 10px;
+    }
+    }
+   
+    @media (min-width:400px) {
+       #hello {
+      background: linear-gradient(60deg, rgba(12, 51, 111,0.6), rgba(226, 106, 240, 0.917));
+      backdrop-filter: blure(10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius:20px;
+      border-color: aqua;
+      height:40%;
+      width:80%;
+      padding:20px;
+      margin:20px;
+      gap: 20px;
+    }
+   
+    input,select{
+      width: 60%;
+      height: 40px;
+    }
+    input {
+      background: rgba(40, 49, 64, 0.5);
+      backdrop-filter: blur(30px);
+      color: rgb(255, 148, 148);
+      font-size: medium;
+      border-radius: 20px 0px 20px 0px / 10px 0px 10px 0px;
+      border-color: steelblue;
+      border-style: none;
+      padding: 10px;
+      transition: all 300ms;
+    }
+    select {
+      background: rgba(40, 49, 64, 0.5);
+      backdrop-filter: blur(30px);
+      border-radius: 20px 0px 20px 0px / 10px 0px 10px 0px;
+      border-color: steelblue;
+      border-style: none;
+      padding: 10px;
+    }
+  }
+    @media (min-width:800px){
+      #hello {
+      background: linear-gradient(60deg, rgba(12, 51, 111,0.6), rgba(226, 106, 240, 0.917));
+      backdrop-filter: blure(10px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      border-color: aqua;
+      height:auto;
+      width: 40%;
+      padding: 20px;
+      margin: 20px;
+      gap: 20px;
+      }
+      input,select{
+      width: 100%;
+      height: 40px;
+      }
+      input {    
+      background: rgba(40, 49, 64, 0.5);
+      backdrop-filter: blur(30px);
+      color: rgb(255, 148, 148);
+      font-size: medium;
+      border-radius: 20px 0px 20px 0px / 10px 0px 10px 0px;
+      border-color: steelblue;
+      border-style: none;
+      padding: 10px;
+      transition: all 300ms;
+      position:relative;
+      }
+      select {
+      flex:1;
+      background: rgba(40, 49, 64, 0.5);
+      backdrop-filter: blur(30px);
+      border-radius: 20px 0px 20px 0px / 10px 0px 10px 0px;
+      border-color: steelblue;
+      border-style: none;
+      padding: 10px;
+      }
+    }
+    .lastButton span {
+      border-radius: 20%;
+      font-family: sans-serif;
+      height: auto;
+      border-style: none;
+      margin:10px;
+      padding: 10px 30px 10px 30px;
+      background: linear-gradient(20deg,rgb(5,141,233), rgb(111, 10, 145));
+      transition:all 500ms;
+    }
+    .lastButton {
+      border-radius:20%;
+      height: auto;
+      min-width: 140px;
+      max-width: 100%;
+      border-style: none;
+      padding: 20px;
+      background: linear-gradient(20deg,rgb(7, 55, 87), rgb(59, 2, 79));
+      transform: scale(1);
+      transition: 0.6s all;
+    }
+    input:hover,
+    input:active,
+    .lastButton:hover,
+    .lastButton:active,
+    select:hover {
+      outline: 0;
+    }
+    input:hover,
+    input:active,
+    input:focus {
+      border: 2px solid rgb(108, 8, 136);
+      box-shadow: 0px 3px 5px rgba(130, 27, 141, 0.917)
+    }
+    .lastButton span:hover {
+      background: transparent;
+    }
+    .lastButton:has(span:hover){
+      background:linear-gradient(60deg,rgb(5,141,233), rgb(111, 10, 145));
+      transform:scale(1.05);
+    }
+    .lastButton:active {
+      transform: scale(0.85);
+      background: linear-gradient(200deg, rgb(72, 167, 230), rgb(191, 113, 54));
+    }
+    .animat{
+      background: linear-gradient(60deg,rgba(25, 25, 167, 0.859),rgb(156, 4, 180));
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      filter: blur(8px);
+      z-index: -2;
+      position:absolute;
+      top:0%;
+      right:0%;
+      transform: rotate(0deg);
+      animation: animi 10s ease-in-out infinite;
+    }
+    @keyframes animi {
+      0%{
+        top:20%;
+        right:0;
+        transform: rotate(30deg);
+      }
+      20%{
+        top:60%;
+        right:10%; 
+      }
+      40%{
+        top:10%;
+        right:90%;       
+      }
+      60%{
+        top:90%;
+        right:20%;       
+      }
+      80%{
+        top:50%;
+        right:60%;        
+      }
+      100%{
+        top:20%;
+        right:0;
+        transform: rotate(180deg);     
+      }  
+    }
+    .titlef{
+      background-image: url('Unitiled Purple.png');
+      background-size:cover;
+      background-clip:text;
+      border-radius: 25%;
+      border:2px outset blueviolet;
+      padding:10px 20px 10px 20px;
+    }
+    #hello div {
+      position:relative;
+    }
+    label{
+      position:absolute;
+      left:15px;
+      top:10px;
+      display:flex;
+    }
+    .FirstButton{
+      background:linear-gradient(60deg,rgba(227, 255, 49, 0.882),rgb(222, 147, 6));
+      min-width:140px;
+      max-width:100%;
+      height:auto;
+      margin:0px 20px 0px 20px;
+      padding:10px 20px 10px 10px;
+      font-size:1.1rem;
+      color:whitesmoke;
+      border-radius: 10%;
+      border:2px outset rgba(243, 127, 4, 0.832);
+      transition:transform 0.6s;
+      transform: scale(1);
+    }
+    .FirstButton:hover{
+      transform:scale(1.05);
+
+
+    }
+    .FirstButton:active{
+      transform: scale(0.95);
+    }
+    .js-addButton{
+      background: linear-gradient(120deg,rgba(159, 86, 232, 0.656),rgb(5, 134, 199));
+      backdrop-filter: blur(9px);
+      width:100%;
+      text-shadow: 3;
+      padding:10px 20px 10px 20px;
+      height:auto;
+      border-radius: 20px;
+      color:rgba(231, 235, 238, 0.873)
+    }
